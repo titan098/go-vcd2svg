@@ -2,7 +2,7 @@
 
 **go-vcd2svg** is a command-line utility written in pure Go for converting VCD (Value Change Dump) files into SVG diagrams.
 
-This utility currently only support simple use cases, and is unlikely to scale well for larger VCD files.if you have the need for a more complete feature set consider using a utility such as [Sootty](https://github.com/Ben1152000/sootty). The feature set of this utility may be expanded in the future to support additional features.
+This utility currently only supports very simple use cases, and is unlikely to scale well for larger VCD files. If you have the need for a more complete feature set consider using a utility such as [Sootty](https://github.com/Ben1152000/sootty). The feature set of this utility may be expanded in the future to support additional features.
 
 ## Installation
 Install `go-vcd2svg` by running the following command to install the utility to `$GOPATH/bin`:
@@ -62,7 +62,7 @@ func main() {
 
 ## Alternatives
 
-- [Sootty](https://github.com/Ben1152000/sootty) - A more fully featured and mature alternative.
+- [Sootty](https://github.com/Ben1152000/sootty) - A fully featured and mature alternative.
 
 ## References
 

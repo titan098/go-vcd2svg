@@ -54,7 +54,7 @@ go-vcd2svg convert -i input.vcd -o output.svg`,
 		}
 
 		// write the file to the specified file
-		if output != "" {
+		if output != ""  && output != "-" {
 			err := os.WriteFile(output, outBytes, 0644)
 			if err != nil {
 				fmt.Printf("Error writing to output file: %s\n", err.Error())
@@ -79,6 +79,7 @@ func init() {
 	rootCmd.AddCommand(convertCmd)
 
 	convertCmd.Flags().StringP("input", "i", "", "Input VCD file path")
-	convertCmd.Flags().StringP("output", "o", "", "Output SVG file path")
+	convertCmd.Flags().StringP("output", "o", "-", "Output SVG file path")
 	convertCmd.MarkFlagRequired("input")
+
 }
